@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce Clone</title>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_media.css">
+        <link rel="stylesheet" href="style_media2.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <a href="#"><img src="img/logo.png" alt="#"></a>
+            <div>
+                <ul class="navbar">
+                    <a href="#"><i id="close" onclick=closed() class="fas fa-times"></i></a>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <l id="lg-bag"><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a></li>
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <i class="fas fa-shopping-cart"></i>
+                <i id="bar" onclick=opened() class="fas fa-outdent"></i>
+            </div>
+
+        </div>
+        
+       <section id="product-details" class="section-p1">
+
+        <div id="single-pro-img" >
+            <img src="img/products/f1.jpg" alt="" id="main-img" onclick=selectImg(this)>
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img class="small-img" src="img/products/f1.jpg" alt="" onclick=selectImg(this)>
+
+                </div>
+                <div class="small-img-col">
+                    <img class="small-img" src="img/products/f2.jpg" alt="" onclick=selectImg(this)>
+
+                </div>
+                <div class="small-img-col">
+                    <img class="small-img" src="img/products/f3.jpg" alt="" onclick=selectImg(this)>
+
+                </div>
+                <div class="small-img-col">
+                    <img class="small-img" src="img/products/f4.jpg" alt="" onclick=selectImg(this)>
+
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-deatils">
+
+            <h5>Home/T-Shirt</h5>
+                <h4>Men's Fashion T-Shirt</h4>
+                <h3>Rs 550.86</h3>
+                <select>
+
+
+                    <option value="text">Select Size</option>
+                    <option value="text">S</option>
+                    <option value="text">M</option>
+                    <option value="text">L</option>
+                    <option value="text">XL</option>
+                    <option value="text">XXL</option>
+                </select>
+
+                <input type="number" value="1">
+                <button>Add To Cart</button>
+                <h6>Product Details</h6>
+                <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odio quidem animi eos corporis nam explicabo pariatur corrupti, voluptates mollitia quia recusandae numquam voluptatum architecto vero perspiciatis suscipit possimus eius, debitis blanditiis nesciunt? Minima cupiditate, obcaecati nesciunt quae veniam, voluptate cumque quia quas accusantium autem laboriosam itaque nulla odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure maxime quod ducimus quasi fugiat assumenda perspiciatis, repudiandae obcaecati ut laborum.</p>
+
+        </div>
+        
+    </section>
+
+    
+    
+    <section id="products" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Brand New Collections</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="#">
+                <div class="des">
+                    <span>PUMA</span>
+                    <h5>Summer Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs 540</h4>
+    
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+    <div class="news-text">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get Email update about our lates updates <span>special offers</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Write Your Email...">
+        <button>Sign Up</button>
+    </div>
+</section>
+
+
+
+
+    
+<footer class="section-m1 section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Addres :</strong>Lorem ipsum dolor sit</p>
+        <p><strong>Phone no :</strong>987456123</p>
+        <p><strong>Hours :</strong>10:00 AM - 10:00 PM</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f " id="real"></i>
+                <i class="fab fa-instagram " id="real"></i>
+                <i class="fab fa-twitter " id="real"></i>
+                <i class="fab fa-youtube " id="real"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About us</h4>
+        <a href="#">About</a>
+        <a href="#">Details</a>
+        <a href="#">Information</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">About</a>
+        <a href="#">Details</a>
+        <a href="#">Information</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>Install App</h4>
+        <a href="#">About</a>
+        <a href="#">Details</a>
+        <a href="#">Information</a>
+        <a href="#">Contact us</a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+
+
+
+       
+        <script >
+
+
+
+
+function selectImg(small_img) {
+
+    let main_img = document.querySelector('#main-img') 
+    main_img.src =small_img.src
+    
+}
+            
+
+</script>
+
+    </body>
+
+</html>
